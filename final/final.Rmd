@@ -1,7 +1,7 @@
 ---
-title: "Title"
+title: "IELTS Examiners Report"
 author: 
-  - Last Name, First Name[^1]
+  - Gandil, Seyfaddin[^1]
 bibliography: ../bibliography/biblio.bib
 csl: ../csl/apa.csl
 header-includes:
@@ -25,50 +25,69 @@ urlcolor: blue
 fontsize: 12pt
 biblio-style: apalike
 abstract: |
-    Write your abstract here.
+    This study encompasses an examination of the International English Language Testing System (IELTS) exam results based on an online survey of 51 individuals.  The goal of this survey was to gather data regarding the experiences and performance of those who took the IELTS exam, with a focus on their overall scores, particular section scores, preparation techniques, and perceived difficulty levels. The information gathered can be helpful for both test takers and educators. According to the statistics, the majority of participants achieved good grades, with an average total score of 7.18 out of 9. Furthermore, the study reveals differences in performance throughout the four exam components, which are Listening, Reading, Writing, and Speaking. Writing was determined to be the most difficult element stated by participants, while Speaking was judged to be the least difficult. The study also emphasizes the variety of preparation tactics used by participants, such as self-study, online courses, and coaching classes. Overall, the report's findings provide useful insights into the IELTS testing experience, assisting future test takers in their preparation and allowing educators to better adjust their teaching techniques to fit the needs of their students.
 ---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
 ```
 
 <!-- ======================================================================= -->
+
 <!-- ============================== FOOTNOTES ============================== -->
+
 <!-- ======================================================================= -->
-[^1]: Student ID, [Github Repo](https://github.com/YOUR_USER_NAME_HERE/YOUR_REPO_NAME_HERE)
-
-# Important Information About Midterm
-
-\colorbox{BurntOrange}{WRITE YOUR GITHUB REPO LINK ON LINE 37 IN THIS FILE!}
-
-**Project Proposal submisson will be done by uploading a zip file to the ekampus system along with the Github repo link. If you do not upload a zip file to the system and do not provide a Github repo link, you will be deemed not to have entered the midterm and final exams.**
-
-**You must upload your project folder (`YourStudentID.zip` file) to *ekampus.ankara.edu.tr* until 9 June 2023, 23:59.**
-
-\colorbox{WildStrawberry}{Read the README.md file in the project folder for more information.}
+[^1]: 21080647, [Github Repo](https://github.com/Gandil312740/21080647.git)
 
 # Introduction
-This outline has been created to assist you in writing your project assignment. You should cite all the sources you use, articles, presentations, projects, etc. Quoting and referencing gives readers the opportunity to access the resources you refer. **Even though you use your own words, if you are conveying the ideas of others in your work, you have to document the source of these ideas. Otherwise, you are committing academic plagiarism.** For example, you can refer to @aydinonat:2007 for academic writing rules. You can find lots of online resources on this topic.
 
-The sections in your project assignment should definitely include the sections in this text. Apart from the sections used here, you can use different subsections. When writing your project, use this file as a draft and adapt its content to your purposes.
-
-In this section, mention the purpose and importance of your work in a few paragraphs.
+The paper analyzes a group of 51 friends' performance on the International English Language Testing System (IELTS) exam. The IELTS exam is accepted by many as a measure of English language skills among individuals studying in another nation. The objective of this report is to gain insight into the performance of the testers as well as pinpoint areas for improvement in the assessment process. This report seeks to boost the reliability and validity of the IELTS exam through studying performance statistics and patterns. It gives helpful data for developing specific tactics and instruments for helping educate candidates and improve their English language skills. Examiners can modify their evaluation methods and provide focused feedback if they understand the common obstacles experienced by test-takers. This ensures a fair and effective assessment. This paper also benefits the larger area of language assessment and testing by informing future research and encouraging the development of novel assessment procedures. In summary, this report provides an overview of the surveyed group's IELTS exam results. The results aim to improve test performance, improve the method of assessment, and assist applicants in achieving their academic and professional goals.
 
 ## Literature Review
 
-In this section, discuss the articles you have read on the subject by giving references. This is a narrative citation @chang:2013. This one is a parenthetical citation [@chang:2013]. **Do not summarize each article individually under a separate title.** In the literature review section, **at least six** articles must be cited [@newbold:2003; @verzani:2014; @wickham:2014; @wooldridge:2015a].
+Numerous research studies have been conducted on IELTS examiners results, their performance on exams and common fails, validity of it, recent development in IELTS exams, critical perspectives and much more.
 
-# Data
-In this section, discuss the source of the data set you use in your study, if you have done any operation on the raw data, these operations and the summary statistics about the data set. In this section, it is mandatory to have a table (Table \ref{tab:summary}) containing summary statistics (mean, standard deviation, minimum, maximum, etc. values) of all variables. Make the necessary references to your tables as shown in the previous sentence [@perkins:1991].
+[@pearson2019critical] analyzes the International English Language Testing System (IELTS) test critically in this article. The author passes into the advantages and deficiencies of the IELTS test and highlights crucial points regarding its validity, reliability, and potential cultural bias by examining various views. [@charge1997recent] explore recent changes to the IELTS examination. They investigate the test's modifications and upgrades over the years, emphasizing elements like exam structure, scoring, and test preparation supplies. They discuss how these modifications have impacted the examination and its execution. [@o2018ielts] shows a summary of the IELTS test as a systematic English language evaluation. The text investigates the objective, organization, and scoring of the examination, emphasizing its importance and use across different academic and professional contexts. [@schoepp2018predictive] analyzes the predictive validity of the IELTS examination in an English as a means of instruction (EMI) environment. The author investigates how well scores from the IELTS correlate with students' future academic success in an EMI surroundings, providing insight into the exam's efficacy in forecasting language proficiency in various educational situations. [@wata2019knowledge] examines international students' knowledge, education, and attitudes concerning the use of the IELTS test in the Australian environment. The article investigate the perspectives and viewpoints of overseas students concerning the IELTS test, offering insight into the test's effect on their college experiences. [@ekhlas2013relationship] The purpose of this research is to look into the relationship between self-regulation tactics, language abilities, and overall performance in the circumstances of the IELTS test. The authors investigate how students' self-regulation tactics affect their scores on tests and overall language competency, offering knowledge about the elements impacting the results of tests.
 
-R codes for the analysis should start in this section. In this section, you should include the codes that imports the data set into R and the codes that generate summary statistics.
+These six references provide a thorough examination of various aspects of the IELTS test, which includes essential viewpoints, recent advances, evaluation and assessment of validity of prediction, global attitudes among learners, and the connection between self-regulation strategies and language proficiency. These materials provide a solid basis for understanding the complexities and importance of the IELTS test across numerous academic and linguistic environments.
 
-```{r}
+\newpage
+
+## Dataset
+
+The "exams" collection comprises results from IELTS examiners. It is made up of 51 observations and 13 variables. The dataset was created by the user through a Google Forms survey. To collect the necessary data, the survey was distributed to 51 friends via various social platforms (Instagram, WhatsApp).
+
+The 13 variables are
+
+-   **Name & Surname:** The name and surname of examiners.
+-   **Date of birth:** The examiner's date of birth.
+-   **Sex:** The examiner's gender.
+-   **Nationality:** The examiner's nationality.
+-   **Age, when you took the exam:** Age of the examiner when s/he took the exam.
+-   **Reading score:** The examiner's score for the reading section of the IELTS exam.
+-   **Listening score:** The examiner's score for the listening section of the IELTS exam.
+-   **Speaking score:** The examiner's score for the speaking section of the IELTS exam.
+-   **Writing score:** The examiner's score for the writing section of the IELTS exam.
+-   **Overall band score:** The examiner's overall band score for the IELTS exam.
+-   **CEFR level:** The examiner's Common European Framework of Reference (CEFR) level for English language proficiency
+-   **Whether the exam was useful when they applied to an academic institution or a job:** whether the examiner found the IELTS exam useful when applying to an academic institution or a job.
+
+All 4 scores (**reading**, **speaking**, **listening**, **writing**) as well as **overall band score** are typically measured on a continuous variables, such as from 0.0 to 9.0. **CEFR level** is typically considered an ordinal categorical variable together with **Nationality**. **Whether the exam was useful when they applied to an academic institution or a job** is categorical variable with only "YES" or "NO" choices same as **Sex** with "F" or "M" only. **Age, when you took the exam** is considered as a continuous variable too.
+
+\newpage
+
+### Data summary statistics
+
+(Table 1) presents the important statistics generated from our dataset, which includes data of 4 main sections of IELTS exam and Overall score. In terms of the Listening section, the mean score is 7.64. While standard deviation is 0.92. The min. score is 6.00 and the max. score is 9.00 demonstrate the range in Listening part. Furthermore, the median score is 7.50 represents the central tendency. Moving on to the Overall band score, the mean is 7.18. The standard deviation of it is 0.53. The min. score is 6.00, however the max. score is 8.50 and median is 7.00. Examining the Reading section, the mean score is 7.06. However, the standard deviation is 0.79 with min. score of 5.50 and max. score of 9.00. Finally, the median score is 7.00. In the Speaking section, the mean score is 7.18 but standard deviation is 0.63. The min. score is 6.00 and the max. score is 9.00. Similarly, the median score is 7.00. Lastly, in the Writing section, the mean score is 6.37. The standard deviation is 0.59 and min. score is 5.50 with max. score is 8.00. And descriptive statistics is median score with 6.50 of it.
+
+In conclusion by examining these statistics, we receive vital insights into the participants' performance in each component as well as the general distribution of scores, helping us to determine their strengths as well as places for progress.
+
+```{r, echo=FALSE}
 library(tidyverse)
 library(here)
-survey <- read_csv(here("data/survey.csv"))
+library(readxl)
+exams <- read_excel(here("data/exams.xlsx"))
 ```
-
-Note that code options are edited in some of the code chunks in the Rmd file.
 
 ```{r, echo=FALSE}
 library(xtable) 
@@ -76,11 +95,12 @@ library(summarytools)
 st_options(lang = "en")
 ```
 
-With the `echo=FALSE` option, prevent the codes from appearing in the derived pdf file and report your results in tables.
-
 ```{r results='asis', echo=FALSE}
-survey %>%
-  select("sex", "credits", "handedness", "height", "handspan") %>% 
+numeric_cols <- c("reading", "listening", "speaking", "writing", "overall")
+exams[numeric_cols] <- lapply(exams[numeric_cols], as.numeric)
+
+exams %>%
+  select(all_of(numeric_cols)) %>%
   descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
   xtable(caption = "Summary Statistics",
          label = "tab:summary",
@@ -89,36 +109,114 @@ survey %>%
 ```
 
 
+\newpage
+
 # Methods and Data Analysis
-In this section describe the methods that you use to achieve the purpose of the study. You should use the appropriate analysis methods (such as hypothesis tests and correlation analysis) that we covered in the class. If you want, you can also use other methods that we haven't covered. If you think some method is more suitable for the purpose of the analysis and the data set, you can use that method [@newbold:2003; @verzani:2014; @wickham:2014; @wooldridge:2015a].
 
-For example, if you are performing regression analysis, discuss your predicted equation in this section. Write your equations and mathematical expressions using $LaTeX$.
+## Gender Distribution among Participants
 
-$$
-Y_t = \beta_0 + \beta_N N_t + \beta_P P_t + \beta_I I_t + \varepsilon_t
-$$
+(Figure 1) titled "Distribution of Sex" shows the gender distribution of the examiners in the dataset. The dataset consists of a total of 51 observations, with 18 of them representing females and 33 representing males. It is evident that males makes up a larger proportion of dataset.
 
-This section should also include different tables and plots. You can add histograms, scatter plots (such as Figure \@ref(fig:plot)), box plots, etc. Make the necessary references to your figures as shown in the previous sentence.
+```{r, echo=FALSE}
+library(ggplot2)
+bar_plot <- ggplot(data = exams, aes(x = sex)) +
+  geom_bar(fill = "black") +
+  labs(title = "Distribution of Sex",
+       x = "Sex",
+       y = "Count",
+       caption = "Figure 1: Distribution of Sex")
+
+print(bar_plot)
+```
+
+\newpage
+## Age and Overall Score Association
+
+The scatter plot titled (Figure 2), investigates the association among the age at which examiners took the exam with their associated overall score. This illustration based on a dataset of 51 observations, provides significant details regarding the link among age and overall score. By analyzing it becomes evident that individuals who were 15 years old at the time of the exam got overall score in range of 7.0 - 7.5. However, the 16-year-old cohort of 18 people showed a range of overall scores from 6.0 to 8.0. Furthermore, 11 were 17 years old and had overall scores that span 6.5 to 8.0. Looking at the older age groups, it shows that six folks aged 18 obtained overall scores varying from 6.5 to 8.5. Uniquely, the results of those aged 19, 22, and 23 resulted in overall scores of 7.0, 7.0, and 7.5, respectively. In addition, two 20-year-old examiners received an overall score of 7.0 and 8.0. In the top age groups, four 21-year-old examiners received overall scores of 7.0 and 7.5. In the older age group, two participants aged 26 received overall score of 7.0 and 7.5, accordingly, while an individual aged 27 received an overall score of 8.5 as one of the highest score in this dateset.
 
 
-```{r plot, fig.align='center', fig.cap='An Awesome Plot'}
-survey %>% 
-  ggplot(aes(x = handedness, y = handspan)) +
+
+
+
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+
+ggplot(data = exams, aes(x = `age, when you took the exam`, y = overall, color = overall)) +
   geom_point() +
-  geom_smooth() +
-  scale_x_continuous("Handedness") + 
-  scale_y_continuous("Handspan")
+  scale_color_gradient(low = "blue", high = "red") +
+  labs(title = "Scatter Plot of age and overall",
+       x = "Age, when exam was taken",
+       y = "Overall score",
+       color = "Overall score",
+       caption = "Figure 2: Association of age at exam and overall")
+```
+
+\newpage
+## Maximum and Minimum of Each Sections
+
+The bar chart (Figure 3) depicts the variation of scores for the "exams" data in reading, listening, speaking, and writing. The figures show an extensive variety of abilities in every proficiency category, with some people performing exceptionally well and others performing rather poorly. This graphic depiction provides a thorough knowledge of the range of skill levels seen in the dataset and is a useful tool for examining performance patterns in the context of language evaluation.
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+# Calculate the maximum and minimum values for each column
+max_values <- apply(exams[, c("reading", "listening", "speaking", "writing")], 2, max)
+min_values <- apply(exams[, c("reading", "listening", "speaking", "writing")], 2, min)
+
+
+plot_data <- data.frame(Variable = c("reading", "listening", "speaking", "writing"),
+                        Max = max_values,
+                        Min = min_values)
+
+ggplot(plot_data, aes(x = Variable)) +
+  geom_col(aes(y = Max, fill = "Max"), position = "dodge") +
+  geom_col(aes(y = Min, fill = "Min"), position = "dodge") +
+  labs(x = "Variables", y = "Scores", title = "Maximum and Minimum Scores") +
+  scale_fill_manual(values = c("Max" = "blue", "Min" = "red")) +
+  theme_minimal() +
+  labs(caption = "Figure 3")
 ```
 
 
+## Prediction
+
+The equation depicts a regression model that seeks to predict a student's overall IELTS score according to how they performed in the _reading_, _speaking_, _listening_, and _writing_ portions.
+
+$$
+Overallbandscore = \beta_0 + \beta_1reading + \beta_2speaking + \beta_3listening + \beta_4writing + \varepsilon
+$$
+
+The dependent variable, represented as \(\ Y_t \), indicates the students' overall score. Multiple factors labeled as \( \beta \) in the equation measure the effect of every independent variable on the overall score. 
+
+When all other variables are zero, the coefficient  \(\ beta_0 \) reflects the intercept or baseline value of the overall score. The coefficient \(\ beta_{\text{reading}} \), \(\ beta_{\text{speaking}} \), \(\ beta_{\text{listening}} \), and \(\ beta_{\text{writing}} \) measure the effect of the _reading_, _speaking_, _hearing_, and _writing_ scores on the overall score, correspondingly.
+
+According to the the formula, the overall score is a linear mixture of these factors, graded according to their values.  The term \(\ ε _t \) denotes the error term, that's responsible for any unanticipated variation in the overall score that the independent variables do not reflect.
+
+This equation can be used to predict an individual's overall score on the IELTS exam according to how they did in each section by calculating the value of the coefficients. It provides useful information about the relative relevance of each part in calculating the total score and can aid with comprehending the aspects that lead to exam performance.
+
 # Conclusion
-Summarize the results of your analysis in this section. Discuss to what extent your results responded to the research question you identified at the beginning and how this work could be improved in the future.
 
-**References section is created automatically by Rmarkdown. There is no need to change the references section in the draft file.**
+Several major discoveries and inferences may be taken from the evaluation of the International English Language Testing System (IELTS) exam results and the analysis of the presented information.
 
-**_You shouldn't delete the last 3 lines. Those lines are required for References section._**
+To begin, the research project surveyed 51 IELTS applicants in order to collect data on their knowledge and skills.  A large percentage of test takers received high marks, with a total score of 7.18 out of 9. Which suggests that the questioned group performed fairly well.
+
+The research also discovered disparities between students throughout all four test elements: listening, reading, writing, and speaking. The writing was rated as the most difficult portion by participants, while Speaking was seen as less challenging. These understandings might help students and instructors in identifying specific areas where individuals may require additional assistance or prep. 
+
+The survey also emphasized the various training approaches utilized by individuals, such as independent study, distance learning programs, and mentoring classes. This highlights the significance of providing a variety of tools and tactics to accommodate varied student interests and requirements. 
+
+The bibliographical study offered an in-depth review of several IELTS-related research papers. Critical viewpoints, contemporary advancements, validity evaluations, worldwide mindsets, and the effect of methods of self-regulation on ability to speak were all explored in these studies. A review of research aids to an improved awareness of the complexity and importance of the IELTS test in various circumstances.
+
+Finally, the report's findings and dataset analysis provide significant insights into the IELTS testing experience. They may assist subsequent applicants prepare, instructors change the way they teach, and make a contribution to improving the IELTS exam's validity and reliability.  The study's material additionally helps those in the field of language testing and evaluation by guiding future studies and encouraging the creation of new methods for evaluation. 
+
+The IELTS exam is able to progress as a legitimate and efficient measure of English language ability for academic and professional purposes by evaluating performance data and patterns, identifying areas for improvement, and acknowledging the various demands of test takers.
+
+
 
 \newpage
-# References {#references}
-<div id="refs"></div>
 
+# References {#references}
+
+::: {#refs}
+:::
