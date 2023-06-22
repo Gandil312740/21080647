@@ -25,9 +25,9 @@ urlcolor: blue
 fontsize: 12pt
 biblio-style: apalike
 abstract: |
-    This study encompasses an examination of the International English Language Testing System (IELTS) exam results based on an online survey of 51 individuals.  The goal of this survey was to gather data regarding the experiences and performance of those who took the IELTS exam, with a focus on their overall scores, particular section scores, preparation techniques, and perceived difficulty levels. The information gathered can be helpful for both test takers and educators. According to the statistics, the majority of participants achieved good grades, with an average total score of 7.18 out of 9. Furthermore, the study reveals differences in performance throughout the four exam components, which are Listening, Reading, Writing, and Speaking. Writing was determined to be the most difficult element stated by participants, while Speaking was judged to be the least difficult. The study also emphasizes the variety of preparation tactics used by participants, such as self-study, online courses, and coaching classes. Overall, the report's findings provide useful insights into the IELTS testing experience, assisting future test takers in their preparation and allowing educators to better adjust their teaching techniques to fit the needs of their students.
----
+    This study will investigate the results of the International English Language Testing System (IELTS) exam using an online poll with a sample size of 51 participants. The major goal is to collect full information on students' IELTS exam experience and performance, concentrating on overall scores, section scores, preparation tactics, as well as perceived difficulty levels. The results of this research are important for both test takers and instructors participating in the preparation process for the IELTS. According to statistical research, nearly all of those surveyed received commendable grades, with an average total score of 7.18 out of 9. However, the study finds discrepancies between scores across the four exam components: listening, reading, writing, and speaking. Notably, participants regarded the writing section to be the most difficult, while the speaking section to be the easiest. This information provides vital insight into the exact areas where test takers may struggle, allowing for the creation of personalised preparation tactics and strategies. Additionally, the research offers light on the various the preparation tactics used by individuals, such as self-study, online courses, and coaching classes. Understanding the various ways employed by successful students to take tests can help instructors tailor their teaching techniques to match the individual needs of their pupils, hence increasing the effectiveness of their educational initiatives. In conclusion, this study adds substantial insights into the IELTS testing experience, providing valuable information for future test takers and educators. The findings help test takers prepare for exams by outlining potential obstacles and providing suggestions on effective strategies. These findings can be used by educators to improve their methods of instruction while offering more assistance for their pupils. Finally, the goal of this research is to enhance the entire IELTS testing procedure while also enabling test takers' professional and educational objectives.
 
+---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
 ```
@@ -51,13 +51,11 @@ Numerous research studies have been conducted on IELTS examiners results, their 
 
 These six references provide a thorough examination of various aspects of the IELTS test, which includes essential viewpoints, recent advances, evaluation and assessment of validity of prediction, global attitudes among learners, and the connection between self-regulation strategies and language proficiency. These materials provide a solid basis for understanding the complexities and importance of the IELTS test across numerous academic and linguistic environments.
 
-\newpage
-
 ## Dataset
 
 The "exams" collection comprises results from IELTS examiners. It is made up of 51 observations and 13 variables. The dataset was created by the user through a Google Forms survey. To collect the necessary data, the survey was distributed to 51 friends via various social platforms (Instagram, WhatsApp).
 
-The 13 variables are
+The 13 variables are:
 
 -   **Name & Surname:** The name and surname of examiners.
 -   **Date of birth:** The examiner's date of birth.
@@ -72,13 +70,24 @@ The 13 variables are
 -   **CEFR level:** The examiner's Common European Framework of Reference (CEFR) level for English language proficiency
 -   **Whether the exam was useful when they applied to an academic institution or a job:** whether the examiner found the IELTS exam useful when applying to an academic institution or a job.
 
-All 4 scores (**reading**, **speaking**, **listening**, **writing**) as well as **overall band score** are typically measured on a continuous variables, such as from 0.0 to 9.0. **CEFR level** is typically considered an ordinal categorical variable together with **Nationality**. **Whether the exam was useful when they applied to an academic institution or a job** is categorical variable with only "YES" or "NO" choices same as **Sex** with "F" or "M" only. **Age, when you took the exam** is considered as a continuous variable too.
+These factors provide useful information on the people' characteristics, exam performance, and perceptions of the exam's usefulness. The dataset contains categorical characteristics such as name, gender, nationality, and exam usefulness, allowing for grouping and comparisons. Age and exam scores, for example, are numerical variables that provide quantitative data for study. Overall, this dataset allows you to assess the performance and perceptions of people who have taken the IELTS exam.
+ 
+## Data summary statistics
 
-\newpage
+(Table 1) summarizes the data for the variables "listening," "overall," "reading," "speaking," and "writing." These statistics provide useful information on the distribution and properties of the data. 
 
-### Data summary statistics
+Each variable's average score is represented in the "Mean" column. Participants received an average of 7.64 in the "listening" category, 7.18 in the "overall" performance, 7.06 in "reading," 7.18 in "speaking," and 6.37 in "writing." These measures indicate the central trend of the results and serve as a benchmark for evaluating individual performance.
 
-(Table 1) presents the important statistics generated from our dataset, which includes data of 4 main sections of IELTS exam and Overall score. In terms of the Listening section, the mean score is 7.64. While standard deviation is 0.92. The min. score is 6.00 and the max. score is 9.00 demonstrate the range in Listening part. Furthermore, the median score is 7.50 represents the central tendency. Moving on to the Overall band score, the mean is 7.18. The standard deviation of it is 0.53. The min. score is 6.00, however the max. score is 8.50 and median is 7.00. Examining the Reading section, the mean score is 7.06. However, the standard deviation is 0.79 with min. score of 5.50 and max. score of 9.00. Finally, the median score is 7.00. In the Speaking section, the mean score is 7.18 but standard deviation is 0.63. The min. score is 6.00 and the max. score is 9.00. Similarly, the median score is 7.00. Lastly, in the Writing section, the mean score is 6.37. The standard deviation is 0.59 and min. score is 5.50 with max. score is 8.00. And descriptive statistics is median score with 6.50 of it.
+The standard deviation for each variable is displayed in the "Std.Dev" column. It assesses the spread or variability of scores around the mean. A lower standard deviation implies that the scores are closer to the mean, whereas a higher standard deviation indicates that there is more variability. The standard deviations in this dataset are 0.92 for "listening," 0.53 for "overall," 0.79 for "reading," 0.63 for "speaking," and 0.59 for "writing."
+
+The "Min" column represents the lowest observed score in each variable. For example, the lowest score in "listening" is 6.00, the lowest score in "overall" is 6.00, the poorest score in "reading" is 5.50, the poorest score in "speaking" is 6.00, and the lowest score in "writing" is 5.50. These numbers represent the worst performance for each category.
+
+Each variable's median score is displayed in the "Median" column. When presented in ascending order, the median reflects the middle value in the dataset. It is less sensitive to extreme values and offers an alternate measure of central tendency. The medians in this dataset are 7.50 for "listening," 7.00 for "overall," 7.00 for "reading," 7.00 for "speaking," and 6.50 for "writing.
+
+The "Max" column represents the highest observed score in each variable. For example, the highest score in "listening" is 9.00, the highest score in "overall" is 8.50, the highest score in "reading" is 9.00, the highest score in "speaking" is 9.00, and the highest score in "writing" is 8.00. These values represent the best performance in each category.
+
+Finally, the summary statistics provide an in-depth look at the central tendency, variability, and range of scores for each variable. They provide a foundation for understanding the data's distribution and features, allowing for additional analysis and interpretation of the results.
+
 
 In conclusion by examining these statistics, we receive vital insights into the participants' performance in each component as well as the general distribution of scores, helping us to determine their strengths as well as places for progress.
 
@@ -88,6 +97,7 @@ library(here)
 library(readxl)
 exams <- read_excel(here("data/exams.xlsx"))
 ```
+
 
 ```{r, echo=FALSE}
 library(xtable) 
@@ -108,63 +118,143 @@ exams %>%
   print(booktabs = TRUE, comment = FALSE, caption.placement = "top")
 ```
 
-
-\newpage
-
 # Methods and Data Analysis
 
-## Gender Distribution among Participants
+## Average Score of Each Sections and Overall Scores Performed by Each Gender
 
-(Figure 1) titled "Distribution of Sex" shows the gender distribution of the examiners in the dataset. The dataset consists of a total of 51 observations, with 18 of them representing females and 33 representing males. It is evident that males makes up a larger proportion of dataset.
+The data description from the bar chart offers useful information about the average scores of each area based on gender. When girls' performance is examined, it is clear that women received an exceptional average score of 8.0 in the listening part, suggesting a good ability for absorbing auditory information. Females received an average score of 7.3 in the reading section, demonstrating their ability to comprehend written texts. The average writing part score of 6.7 indicates that females have strong written communication skills. Furthermore, females had a commendable average score of 7.2 in the speaking portion, suggesting their ability to effectively convey thoughts and ideas. 
 
-```{r, echo=FALSE}
+When it comes to boys, an average score of 7.4 in the hearing portion demonstrates their ability to absorb spoken language. Males scored an average of 6.9 on the reading section, indicating their ability to comprehend written content. The average writing section score of 6.2 indicates that guys have a strong foundation in written language. Furthermore, guys had an average score of 7.1 in the speaking portion, suggesting their ability to successfully communicate and convey ideas vocally.
+
+Overall, the findings show that both males and females performed well throughout all parts, with females often getting somewhat higher average scores. This implies that females may have a minor advantage in language skills, particularly listening and reading. Both genders, however, demonstrated proficiency in writing and speaking, showing their well-rounded linguistic talents.
+
+```{r,fig.align='center', echo=FALSE}
 library(ggplot2)
-bar_plot <- ggplot(data = exams, aes(x = sex)) +
-  geom_bar(fill = "black") +
-  labs(title = "Distribution of Sex",
-       x = "Sex",
-       y = "Count",
-       caption = "Figure 1: Distribution of Sex")
+library(readxl)
+library(reshape2)
+library(gridExtra)
+library(here)
 
-print(bar_plot)
+exams <- read_excel(here("data/exams.xlsx"))
+
+male_data <- subset(exams, sex == "M")
+female_data <- subset(exams, sex == "F")
+
+male_data[, c("reading", "listening", "speaking", "writing")] <- lapply(male_data[, c("reading", "listening", "speaking", "writing")], as.numeric)
+female_data[, c("reading", "listening", "speaking", "writing")] <- lapply(female_data[, c("reading", "listening", "speaking", "writing")], as.numeric)
+
+male_section_scores <- colMeans(male_data[, c("reading", "listening", "speaking", "writing")], na.rm = TRUE)
+female_section_scores <- colMeans(female_data[, c("reading", "listening", "speaking", "writing")], na.rm = TRUE)
+
+section_scores_data <- data.frame(
+  Section = c("Reading", "Listening", "Speaking", "Writing"),
+  Male = male_section_scores,
+  Female = female_section_scores
+)
+
+section_scores_data_melted <- reshape2::melt(
+  section_scores_data,
+  id.vars = "Section",
+  variable.name = "Gender",
+  value.name = "Score"
+)
+
+plot <- ggplot(section_scores_data_melted, aes(x = Section, y = Score, fill = Gender)) +
+  geom_bar(stat = "identity", position = "dodge", width = 0.5, color = "black") +
+  labs(title = "Figure 1, Section-wise Performance", x = "Sections", y = "Average Scores", fill = "Gender") +
+  theme_minimal() +
+  coord_cartesian(ylim = c(0, 9)) +
+  scale_fill_manual(values = c("cyan3", "brown2")) +
+  geom_text(aes(label = round(Score, 1)), position = position_dodge2(width = 0.9), vjust = -0.5)
+
+grid::grid.newpage()
+grid::grid.draw(plot)
+
 ```
 
-\newpage
-## Age and Overall Score Association
-
-The scatter plot titled (Figure 2), investigates the association among the age at which examiners took the exam with their associated overall score. This illustration based on a dataset of 51 observations, provides significant details regarding the link among age and overall score. By analyzing it becomes evident that individuals who were 15 years old at the time of the exam got overall score in range of 7.0 - 7.5. However, the 16-year-old cohort of 18 people showed a range of overall scores from 6.0 to 8.0. Furthermore, 11 were 17 years old and had overall scores that span 6.5 to 8.0. Looking at the older age groups, it shows that six folks aged 18 obtained overall scores varying from 6.5 to 8.5. Uniquely, the results of those aged 19, 22, and 23 resulted in overall scores of 7.0, 7.0, and 7.5, respectively. In addition, two 20-year-old examiners received an overall score of 7.0 and 8.0. In the top age groups, four 21-year-old examiners received overall scores of 7.0 and 7.5. In the older age group, two participants aged 26 received overall score of 7.0 and 7.5, accordingly, while an individual aged 27 received an overall score of 8.5 as one of the highest score in this dateset.
+The information under (Figure 2) analysis shows that there is a minor difference in the average overall scores between males and girls. Females had an overall score of 7.5, while males received a score of 7.0. This suggests that ladies fared slightly better than males on average in the exam. While the difference in average scores between the two groups is minor, it shows that females performed slightly better overall in the evaluation. These statistics illustrate females' persistent competence and academic achievements, putting them somewhat ahead of the average total score.
 
 
+```{r,fig.align='center', echo=FALSE}
+library(readxl)
+library(reshape2)
+library(gridExtra)
+library(here)
+
+exams <- read_excel(here("data/exams.xlsx"))
+
+male_data <- subset(exams, sex == "M")
+female_data <- subset(exams, sex == "F")
+
+male_data$overall <- as.numeric(male_data$overall)
+female_data$overall <- as.numeric(female_data$overall)
+
+male_avg_score <- mean(male_data$overall, na.rm = TRUE)
+female_avg_score <- mean(female_data$overall, na.rm = TRUE)
+
+avg_score_data <- data.frame(
+  Gender = c("Male", "Female"),
+  Average_Score = c(male_avg_score, female_avg_score)
+)
+
+plot <- ggplot(avg_score_data, aes(x = Gender, y = Average_Score, fill = Gender)) +
+  geom_bar(stat = "identity", width = 0.5, color = "black") +
+  labs(title = "Figure 2, Average Score Performance", x = "Gender", y = "Average Score") +
+  coord_cartesian(ylim = c(0, 10)) +
+  scale_fill_manual(values = c("brown2", "cyan3")) +
+  geom_text(aes(label = round(Average_Score, 1)), vjust = -0.5)
+
+grid::grid.newpage()
+grid::grid.draw(plot)
+
+```
+
+## Relationship between Birth Year and Age when Taking the Exam
+
+Based on the available data, the scatter plot (Figure 3) depicts the link between birth year and age when taking the exam. The dataset contains 13 data points reflecting various birth years and the age of individuals when they took the exam.
+
+The dataset contains exam takers born between 1991 and 2006. Their ages ranged from 15.6 to 26.5 years when they took the exam. The scatter plot indicates a possible negative association between birth year and age, with persons born earlier tending to be older while taking the exam, and vice versa.
+
+However, it is crucial to remember that the dataset is rather small and may not fully capture the features of the broader population. The small amount of data points makes it difficult to draw firm conclusions or discover major trends.
+
+Despite the tiny size of the dataset, there is a noteworthy concentration of data points around specific birth years and ages. Individuals born in 1994, 1995, and 1996, for example, took the exam in their mid-20s, whilst those born in 2000 took the exam at the age of 16. This shows that the age distribution varies depending on the year of birth.
+
+It is essential to collect a larger and more diversified dataset to acquire more robust insights and corroborate any patterns or trends. A bigger sample size would enable more accurate conclusions to be reached about the association between birth year and age while taking the exam.
+
+In conclusion, the scatter plot reveals a probable inverse link between birth year and age when taking the exam based on the small dataset presented. More data collection and analysis are needed, however, to corroborate these results and provide more detailed insights.
 
 
-
-
-```{r, echo=FALSE}
+```{r,fig.align='center', out.width = "70%", echo=FALSE}
 library(ggplot2)
 
+exams$birth_year <- as.numeric(format(as.Date(exams$`date of birth`, format = "%d.%m.%Y"), "%Y"))
 
-ggplot(data = exams, aes(x = `age, when you took the exam`, y = overall, color = overall)) +
+scatter_plot <- ggplot(exams, aes(x = birth_year, y = `age, when you took the exam`)) +
   geom_point() +
-  scale_color_gradient(low = "blue", high = "red") +
-  labs(title = "Scatter Plot of age and overall",
-       x = "Age, when exam was taken",
-       y = "Overall score",
-       color = "Overall score",
-       caption = "Figure 2: Association of age at exam and overall")
+  labs(x = "Birth Year", y = "Age when You Took the Exam", title = "Figure 3")
+
+print(scatter_plot)
+
+
 ```
 
-\newpage
 ## Maximum and Minimum of Each Sections
 
-The bar chart (Figure 3) depicts the variation of scores for the "exams" data in reading, listening, speaking, and writing. The figures show an extensive variety of abilities in every proficiency category, with some people performing exceptionally well and others performing rather poorly. This graphic depiction provides a thorough knowledge of the range of skill levels seen in the dataset and is a useful tool for examining performance patterns in the context of language evaluation.
+(Figure 4) depicts a complete overview of performance in various language skills based on the maximum and minimum scores obtained. When it comes to listening skills, the highest score obtained is an amazing 9.0, displaying exceptional proficiency. On the opposite end of the spectrum, the minimum listening score recorded is 6.0, showing a respectable degree of skill even in the lowest range.
 
-```{r, echo=FALSE}
+Shifting the focus to reading ability, the bar chart shows that individuals got a maximum score of 9.0, demonstrating strong reading abilities. The minimal score in this skill, on the other hand, is 5.5, indicating a basic proficiency level that nonetheless displays a knowledge of the subject area.
+
+The table also depicts performance in the speaking skill, with the highest score reaching an astounding 9.0. This high score denotes an extraordinary grasp of spoken language, emphasizing exceptional oral communication skills. Similarly, the minimum speaking score seen is 6.0, demonstrating a competent level of proficiency even at the lower end.
+
+Finally, the writing skill received a maximum score of 8.0, indicating a strong performance in written expression. The minimal writing score is 5.5, indicating a baseline level of skill in communicating thoughts and ideas through written language.
+
+Overall, the bar chart covers the range of results across different language skills effectively, providing significant insights into the participants' performance. It identifies strengths and opportunities for development in hearing, reading, speaking, and writing, allowing for a thorough assessment of language competence levels.
+
+```{r,fig.align='center', echo=FALSE}
 library(ggplot2)
 
-# Calculate the maximum and minimum values for each column
 max_values <- apply(exams[, c("reading", "listening", "speaking", "writing")], 2, max)
 min_values <- apply(exams[, c("reading", "listening", "speaking", "writing")], 2, min)
-
 
 plot_data <- data.frame(Variable = c("reading", "listening", "speaking", "writing"),
                         Max = max_values,
@@ -173,10 +263,13 @@ plot_data <- data.frame(Variable = c("reading", "listening", "speaking", "writin
 ggplot(plot_data, aes(x = Variable)) +
   geom_col(aes(y = Max, fill = "Max"), position = "dodge") +
   geom_col(aes(y = Min, fill = "Min"), position = "dodge") +
-  labs(x = "Variables", y = "Scores", title = "Maximum and Minimum Scores") +
+  geom_text(aes(y = Max, label = Max), vjust = -0.5) +
+  geom_text(aes(y = Min, label = Min), vjust = 1.5) +
+  labs(x = "Sections", y = "Scores", title = "Figure 4") +
   scale_fill_manual(values = c("Max" = "blue", "Min" = "red")) +
   theme_minimal() +
-  labs(caption = "Figure 3")
+  labs(title = "Figure 4")
+
 ```
 
 
@@ -185,8 +278,9 @@ ggplot(plot_data, aes(x = Variable)) +
 The equation depicts a regression model that seeks to predict a student's overall IELTS score according to how they performed in the _reading_, _speaking_, _listening_, and _writing_ portions.
 
 $$
-Overallbandscore = \beta_0 + \beta_1reading + \beta_2speaking + \beta_3listening + \beta_4writing + \varepsilon
+Y_t = \beta_0 + \beta_{\text{listening}} \text{listening}_t + \beta_{\text{reading}} \text{reading}_t + \beta_{\text{writing}} \text{writing}_t + \beta_{\text{speaking}} \text{speaking}_t + \varepsilon_t
 $$
+
 
 The dependent variable, represented as \(\ Y_t \), indicates the students' overall score. Multiple factors labeled as \( \beta \) in the equation measure the effect of every independent variable on the overall score. 
 
@@ -198,20 +292,13 @@ This equation can be used to predict an individual's overall score on the IELTS 
 
 # Conclusion
 
-Several major discoveries and inferences may be taken from the evaluation of the International English Language Testing System (IELTS) exam results and the analysis of the presented information.
+Several major results have emerged from the analysis undertaken in this paper addressing the International English Language Testing System (IELTS) exam and its consequences for test takers and instructors. To obtain thorough information on students' IELTS exam experience and performance, the study used an online poll with a sample size of 51 participants.
 
-To begin, the research project surveyed 51 IELTS applicants in order to collect data on their knowledge and skills.  A large percentage of test takers received high marks, with a total score of 7.18 out of 9. Which suggests that the questioned group performed fairly well.
+According to the findings, the majority of participants achieved commendable scores, with an average total score of 7.18 out of 9. However, there were differences in scores throughout the four exam components: hearing, reading, writing, and speaking. Participants thought the writing section was the most difficult, while the speaking section was the easiest.
 
-The research also discovered disparities between students throughout all four test elements: listening, reading, writing, and speaking. The writing was rated as the most difficult portion by participants, while Speaking was seen as less challenging. These understandings might help students and instructors in identifying specific areas where individuals may require additional assistance or prep. 
+These findings offer useful insights into the exact areas where test takers may struggle, allowing for the development of individualized preparation approaches and strategies. Furthermore, the study throws light on numerous preparation strategies used by successful students, such as self-study, online courses, and coaching classes. Understanding the various tactics utilized by high-achieving individuals can help teachers customize their teaching techniques to match the particular needs of their pupils, hence increasing the efficacy of their educational initiatives.
 
-The survey also emphasized the various training approaches utilized by individuals, such as independent study, distance learning programs, and mentoring classes. This highlights the significance of providing a variety of tools and tactics to accommodate varied student interests and requirements. 
-
-The bibliographical study offered an in-depth review of several IELTS-related research papers. Critical viewpoints, contemporary advancements, validity evaluations, worldwide mindsets, and the effect of methods of self-regulation on ability to speak were all explored in these studies. A review of research aids to an improved awareness of the complexity and importance of the IELTS test in various circumstances.
-
-Finally, the report's findings and dataset analysis provide significant insights into the IELTS testing experience. They may assist subsequent applicants prepare, instructors change the way they teach, and make a contribution to improving the IELTS exam's validity and reliability.  The study's material additionally helps those in the field of language testing and evaluation by guiding future studies and encouraging the creation of new methods for evaluation. 
-
-The IELTS exam is able to progress as a legitimate and efficient measure of English language ability for academic and professional purposes by evaluating performance data and patterns, identifying areas for improvement, and acknowledging the various demands of test takers.
-
+Finally, this study adds substantial insights into the IELTS testing experience, providing useful information for future test takers and educators. The findings assist test takers in preparing for tests by describing potential difficulties and suggesting effective techniques. Furthermore, educators can use these data to improve their educational approaches and provide better support to their students. The ultimate goal of this research is to improve the entire IELTS testing method while also supporting test takers' professional and educational goals.
 
 
 \newpage
